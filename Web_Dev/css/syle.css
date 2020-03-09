@@ -1,0 +1,131 @@
+/* FONTS */
+@font-face{
+    font-family: 'Indie Flower';
+    src: url('/fonts/Indie_Flower/IndieFlower-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Chewy';
+    src: url('/fonts/Chewy/Chewy-Regular.ttf');
+    font-style: normal;
+}
+    
+
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-text: #3f3e3e;
+
+    --ff-logo: 'Indie Flower', serif;
+    --ff-section-title: 'Chewy', serif;
+}
+
+main{
+    /* nothing for now */
+}
+
+/* HEADER STUFF */
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/backgroundImgs/Pets.jpg);
+    background-blend-mode: multiply;
+    background-color: rgb(224, 218, 218);
+}
+
+.logo{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+    font-family: var(--ff-logo);
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+/* NAVIGATION */
+.navList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.navList li{
+    margin: 1rem 5rem;
+}
+
+.navList a{
+    text-decoration: none;
+    color: black;
+}
+
+.navList a:hover{
+    text-decoration: overline;
+}
+
+/* BUTTONS */
+
+/* TYPOGRAPHY */
+
+p{
+    color: var(--clr-text);
+}
+
+.section__title{
+    font-family: var(--ff-section-title);
+}
+
+.pet__title{
+    font-family: var(--ff-section-title);
+}
+
+/* MAIN WEB LAYOUT */
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 1em;
+}
+
+.main-header img{
+
+    width: 40rem;
+}
+
+.pets-wrapper{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.pets{
+    border: 2px solid green;
+    padding: 0em;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.pet{
+    
+}
+
+.pets__filter{
+    border: 2px solid blue;
+    padding: 10em;
+
+}
+
