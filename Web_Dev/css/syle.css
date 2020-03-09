@@ -28,7 +28,7 @@ main{
 header{
     display: flex;
     flex-direction: column;
-    background-image: url(/Web_Dev/backgroundImgs/Pets.jpg);
+    background-image: url(../backgroundImgs/Pets.jpg);
     background-blend-mode: multiply;
     background-color: rgb(224, 218, 218);
 }
