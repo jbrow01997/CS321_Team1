@@ -80,6 +80,7 @@ p{
 
 .pet__title{
     font-family: var(--ff-section-title);
+    text-align: center;
 }
 
 /* MAIN WEB LAYOUT */
@@ -104,20 +105,24 @@ p{
 }
 
 .pets{
-    border: 2px solid green;
     padding: 0em;
     display: flex;
     flex-direction: row;
-
+    margin: 0 1em;
 }
 
 .pet{
-    
+    border: 2px solid blue;
+    padding: .5em;
+}
+
+.pet + .pet{
+    margin-left: 1em;
 }
 
 .pets__filter{
-    border: 2px solid blue;
     padding: 10em;
+    border: 2px solid red;
 
 }
 
