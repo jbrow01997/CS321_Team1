@@ -156,7 +156,7 @@ p{
     flex-direction: column;
     /*border: 2px solid blue;*/
     padding: .5em;
-    width: 250px;
+    width: 300px;
     
     border-radius: var(--border-radi-div);
     box-shadow: 0 0 1em rgb(172, 170, 170);
