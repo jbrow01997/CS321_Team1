@@ -154,7 +154,11 @@ p{
     width: 250px;
     
     border-radius: var(--border-radi-div);
-    box-shadow: 0 0 1em rgb(172, 172, 172);
+    box-shadow: 0 0 1em rgb(172, 170, 170);
+}
+
+.pet:hover{
+    box-shadow: 0 0 1em rgb(126, 123, 123);
 }
 
 .pet img{
