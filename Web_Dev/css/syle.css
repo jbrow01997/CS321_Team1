@@ -83,7 +83,7 @@ header{
 }
 
 .btn{
-    padding: .5em 1em;
+    padding: .3em .8em;
     border-radius: var(--border-radi-btn);
     text-decoration: none;
     color: white;
@@ -134,9 +134,13 @@ p{
  /* pet stuff */
 .pets-wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 1em 0;
-    overflow: auto;
+}
+
+.pets-wrapper h2{
+    margin: 0 1em;
+    font-size: 30px;
 }
 
 .pets{
@@ -144,6 +148,7 @@ p{
     display: flex;
     flex-direction: row;
     margin: 0 1em;
+    overflow: auto;
 }
 
 .pet{
@@ -162,7 +167,8 @@ p{
 }
 
 .pet img{
-   height: 10em;
+   width: 190px;
+   height: 170px;
    border-radius: var(--border-radi-div);
 }
 
@@ -171,8 +177,7 @@ p{
 }
 
 .pets__filter{
-    padding: 10em;
-    border: 2px solid red;
+
 }
 
 .pet__information{
