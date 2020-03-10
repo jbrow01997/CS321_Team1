@@ -20,7 +20,8 @@
 }
 
 main{
-    /* nothing for now */
+    /* change later*/
+    height: 200vh;
 }
 
 /* HEADER STUFF */
@@ -97,10 +98,11 @@ p{
     width: 40rem;
 }
 
+ /* pet stuff */
 .pets-wrapper{
     display: flex;
     flex-direction: row;
-
+    margin: 1em 0;
 
 }
 
@@ -112,8 +114,19 @@ p{
 }
 
 .pet{
-    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid blue;*/
     padding: .5em;
+    width: 250px;
+    height: 25em;
+    border-radius: .5em;
+    box-shadow: 0 0 1em rgb(172, 172, 172);
+}
+
+.pet img{
+   height: 10em;
+   border-radius: .5em;
 }
 
 .pet + .pet{
@@ -123,6 +136,13 @@ p{
 .pets__filter{
     padding: 10em;
     border: 2px solid red;
+}
 
+.pet__information{
+    margin: .7em;
+}
+
+.pet__information p + p{
+    margin-top: 1em;
 }
 
