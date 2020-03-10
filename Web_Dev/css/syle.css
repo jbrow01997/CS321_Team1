@@ -14,9 +14,13 @@
 
 :root{
     --clr-text: #3f3e3e;
+    --clr-btn: #559708;
 
     --ff-logo: 'Indie Flower', cursive;
     --ff-section-title: 'Chewy', cursive;
+
+    --border-radi-btn: .3em;
+    --border-radi-div: .5em;
 }
 
 main{
@@ -37,7 +41,6 @@ header{
 .logo{
     font-size: 4rem;
     text-align: center;
-    color: black;
     font-family: var(--ff-logo);
 }
 
@@ -61,6 +64,9 @@ header{
 .navList a{
     text-decoration: none;
     color: black;
+    font-weight: 700;
+    font-size: 18px;
+    
 }
 
 .navList a:hover{
@@ -68,6 +74,33 @@ header{
 }
 
 /* BUTTONS */
+
+.btn__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.btn{
+    padding: .5em 1em;
+    border-radius: var(--border-radi-btn);
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #427706;
+}
+
+.btn + .btn{
+    margin-left: 1.5em;
+}
+
+.btn-color{
+    background-color: var(--clr-btn);
+}
 
 /* TYPOGRAPHY */
 
@@ -119,14 +152,14 @@ p{
     /*border: 2px solid blue;*/
     padding: .5em;
     width: 250px;
-    height: 25em;
-    border-radius: .5em;
+    
+    border-radius: var(--border-radi-div);
     box-shadow: 0 0 1em rgb(172, 172, 172);
 }
 
 .pet img{
    height: 10em;
-   border-radius: .5em;
+   border-radius: var(--border-radi-div);
 }
 
 .pet + .pet{
@@ -139,7 +172,7 @@ p{
 }
 
 .pet__information{
-    margin: .7em;
+    margin: .7em 0 0 .7em;
 }
 
 .pet__information p + p{
