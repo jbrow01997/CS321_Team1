@@ -131,7 +131,7 @@ p{
     width: 40rem;
 }
 
- /* pet stuff */
+ /* pet stuff and viewmore */
 .pets-wrapper{
     display: flex;
     flex-direction: column;
@@ -151,10 +151,10 @@ p{
     overflow: auto;
 }
 
-.pet{
+.pet,
+.viewmore{
     display: flex;
     flex-direction: column;
-    /*border: 2px solid blue;*/
     padding: .5em;
     width: 300px;
     
@@ -162,7 +162,24 @@ p{
     box-shadow: 0 0 1em rgb(172, 170, 170);
 }
 
-.pet:hover{
+.viewmore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em;
+    background-color: var(--clr-btn);
+}
+
+.viewmore a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-family: var(--ff-section-title);
+}
+
+.pet:hover,
+.viewmore:hover{
     box-shadow: 0 0 1em rgb(109, 106, 106);
 }
 
@@ -175,9 +192,8 @@ p{
 .pet + .pet{
     margin-left: 1em;
 }
-
-.pets__filter{
-
+.pet + .viewmore{
+    margin-left: 1em;
 }
 
 .pet__information{
@@ -186,5 +202,9 @@ p{
 
 .pet__information p + p{
     margin-top: 1em;
+}
+
+.pets__fiter{
+
 }
 
