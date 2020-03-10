@@ -6,7 +6,9 @@
 
 /* GENERAL */
 
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -84,11 +86,30 @@ footer p{
     color: black;
     font-weight: 700;
     font-size: 18px;
-    
 }
 
+.navList a::before{
+    content: '';
+    display: block;
+    flex-direction: column;
+    height: 4px;
+    width: 100%;
+    background: black;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform ease-in-out 250ms;
+}
+
+.navList a:hover::before{
+    transform: scale(1, 1);
+}
+
+
+
+
+
 .navList a:hover{
-    text-decoration: overline;
+    
 }
 
 /* BUTTONS */
