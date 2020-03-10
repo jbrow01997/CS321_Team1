@@ -136,11 +136,11 @@ p{
     display: flex;
     flex-direction: row;
     margin: 1em 0;
-
+    overflow: auto;
 }
 
 .pets{
-    padding: 0em;
+    padding: .6em;
     display: flex;
     flex-direction: row;
     margin: 0 1em;
