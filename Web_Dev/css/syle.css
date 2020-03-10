@@ -24,9 +24,8 @@
     --border-radi-div: .5em;
 }
 
-main{
+html{
     /* change later*/
-    height: 200vh;
 }
 
 /* HEADER STUFF */
@@ -48,6 +47,24 @@ header{
 .logo a{
     text-decoration: none;
     color: black;
+}
+
+/* FOOTER STUFF */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10em;
+    background-color: var(--clr-btn-dark);
+}
+
+footer p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    letter-spacing: 1.5px;
 }
 
 /* NAVIGATION */
