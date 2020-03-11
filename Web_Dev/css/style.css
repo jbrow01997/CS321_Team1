@@ -28,6 +28,8 @@
 
     --border-radi-btn: .3em;
     --border-radi-div: .5em;
+
+    --box-shadow: 0 0 1em rgb(95, 93, 93);
 }
 
 html{
@@ -159,24 +161,41 @@ p{
 .choose-pet{
     display: flex;
     flex-direction: column;
-    text-align: center;
+   
 }
 
 .choose-pet__wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid red;
+
 }
 
 .choose-pet__wrapper a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-decoration: none;
-    color: black;
-    
+    color: white;
+    min-width: 450px;
+    min-height: 350px;
+    font-size: 50px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    border: 2px solid red;
     text-align: center;
-    border: 2px solid blue;
-    font-size: 30px;
-    padding: 5em 4em;
+    letter-spacing: 2px;
+    border-radius: .5em;
+
+    
+}
+
+.browse__cats {
+    background-image: url('../pet_images/cat2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-blend-mode: multiply;    
 }
 
 .choose-pet__wrapper a + a{
@@ -222,7 +241,7 @@ p{
     min-width: 230px;
     max-width: 230px;
     border-radius: var(--border-radi-div);
-    box-shadow: 0 0 1em rgb(172, 170, 170);
+    box-shadow: var(--box-shadow);
     transition: .3s ease;
 }
 
