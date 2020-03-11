@@ -156,6 +156,34 @@ p{
 
 /* MAIN WEB LAYOUT */
 
+.choose-pet{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.choose-pet__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.choose-pet__wrapper a{
+    text-decoration: none;
+    color: black;
+    
+    text-align: center;
+    border: 2px solid blue;
+    font-size: 30px;
+    padding: 5em 4em;
+}
+
+.choose-pet__wrapper a + a{
+    margin-left: 1.5em;
+}
+
+
 .main-header,
 .pet-display-header{
     display: flex;
