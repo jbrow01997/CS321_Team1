@@ -184,11 +184,19 @@ p{
     padding: 10px;
     box-shadow: var(--box-shadow);
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     border-radius: .5em;
     font-family: var(--ff-section-title);
+    transition: 200ms ease-in-out;
+    background-blend-mode: multiply;
+    background-color: rgb(187, 187, 187);
+}
 
-    
+.choose-pet__wrapper a:hover{
+    background-color: rgb(63, 63, 63);
+    box-shadow: 0 0 1em rgb(95, 93, 93);
+    transition: 200ms ease-in-out;
+    font-size: 55px;
 }
 
 .browse__cats {
@@ -208,7 +216,7 @@ p{
 }
 
 .choose-pet__wrapper a + a{
-    margin-left: 1.5em;
+    margin-left: 70px;
 }
 
 
