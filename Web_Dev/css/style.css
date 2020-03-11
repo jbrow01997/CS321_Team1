@@ -219,6 +219,7 @@ p{
 
 .viewmore:hover{
     background-color: var(--clr-btn-dark);
+    font-size: 1.8em;
 }
 
 .pet img{
