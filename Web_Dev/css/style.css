@@ -32,8 +32,8 @@
     --box-shadow: 0 0 1em rgb(95, 93, 93);
 }
 
-html{
-    /* change later*/
+section{
+    margin: 2em 0;
 }
 
 /* HEADER STUFF */
@@ -182,16 +182,24 @@ p{
     font-size: 50px;
     padding: 10px;
     box-shadow: var(--box-shadow);
-    border: 2px solid red;
     text-align: center;
     letter-spacing: 2px;
     border-radius: .5em;
+    font-family: var(--ff-section-title);
 
     
 }
 
 .browse__cats {
     background-image: url('../pet_images/cat2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-blend-mode: multiply;    
+}
+
+.browse__dogs{
+    background-image: url('../pet_images/dog.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
