@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap'); /* indie flower */
 
 @import url('https://fonts.googleapis.com/css?family=Chewy&display=swap'); /* chewy */
+
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap'); /* courgette */
+
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap'); /* barlow semi condensed */
     
 
 /* GENERAL */
@@ -37,7 +41,7 @@ header{
     flex-direction: column;
     background-image: url(../backgroundImgs/Pets.jpg);
     background-blend-mode: multiply;
-    background-color: rgb(224, 218, 218);
+    background-color: rgb(212, 212, 212);
 }
 
 .logo{
@@ -105,13 +109,6 @@ footer p{
 }
 
 
-
-
-
-.navList a:hover{
-    
-}
-
 /* BUTTONS */
 
 .btn__wrapper{
@@ -119,10 +116,11 @@ footer p{
     flex-direction: row;
     justify-content: center;
     margin-top: .8em;
+    margin-bottom: .25em;
 }
 
 .btn{
-    padding: .3em .8em;
+    padding: .2em .5em;
     border-radius: var(--border-radi-btn);
     text-decoration: none;
     color: white;
@@ -165,10 +163,6 @@ p{
     margin-top: 1em;
 }
 
-.main-header img{
-
-    width: 40rem;
-}
 
  /* pet stuff and viewmore */
 .pets-wrapper{
@@ -194,28 +188,23 @@ p{
 .viewmore{
     display: flex;
     flex-direction: column;
-    padding: .5em;
-    width: 300px;
-    
+    padding: .5em .5em 0 .5em;
+    min-width: 230px;
+    max-width: 230px;
     border-radius: var(--border-radi-div);
     box-shadow: 0 0 1em rgb(172, 170, 170);
     transition: .3s ease;
 }
 
-.viewmore{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5em;
-    background-color: var(--clr-btn);
-}
 
-.viewmore a{
+.viewmore{
     text-decoration: none;
     text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
     color: white;
-    font-size: 2em;
     font-family: var(--ff-section-title);
+    background-color: var(--clr-btn);
 }
 
 .pet:hover,
@@ -233,27 +222,32 @@ p{
 }
 
 .pet img{
-   width: 190px;
-   height: 170px;
+   max-width: 100%;
+   max-height: 100%;
    border-radius: var(--border-radi-div);
+
 }
 
 .pet + .pet{
     margin-left: 1em;
 }
 .pet + .viewmore{
-    margin-left: 1em;
+    margin-left: 16px;
 }
 
 .pet__information{
-    margin: .7em 0 0 .7em;
-}
-
-.pet__information p + p{
-    margin-top: 1em;
+    margin: .7em 0 .1em .7em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 800;
 }
 
 .pets__fiter{
+
+}
+
+/* ABOUT WEB LAYOUT */
+
+.about-header{
 
 }
 
