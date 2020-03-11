@@ -33,7 +33,7 @@
 }
 
 section{
-    margin: 2em 0;
+    margin-top: 2em;
 }
 
 /* HEADER STUFF */
@@ -149,6 +149,7 @@ p{
 
 .section__title{
     font-family: var(--ff-section-title);
+    margin-top: 1em;
 }
 
 .pet__title{
@@ -216,7 +217,7 @@ p{
     display: flex;
     flex-direction: column;
     place-items: center;
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 
 
@@ -225,12 +226,16 @@ p{
 .pets-wrapper{
     display: flex;
     flex-direction: column;
-    margin: 1em 0;
+    margin: 0;
 }
 
 .pets-wrapper h2{
     margin: 0 1em;
     font-size: 30px;
+}
+
+.pets-wrapper + .pets-wrapper{
+    margin-top: 1em;
 }
 
 .pets{
