@@ -177,10 +177,10 @@ p{
 }
 
 .pets{
-    padding: .6em;
     display: flex;
     flex-direction: row;
     margin: 0 1em;
+    padding: 1em;
     overflow: auto;
 }
 
@@ -202,6 +202,7 @@ p{
     text-align: center;
     justify-content: center;
     font-size: 1.5em;
+    box-shadow: 0 0 .8em rgb(172, 170, 170);
     color: white;
     font-family: var(--ff-section-title);
     background-color: var(--clr-btn);
