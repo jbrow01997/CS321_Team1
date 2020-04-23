@@ -7,6 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap'); /* barlow semi condensed */
     
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); /* courgette */
 
 /* GENERAL */
 
@@ -23,7 +24,7 @@
     --clr-btn: #559708;
     --clr-btn-dark: #3f7206;
 
-    --ff-logo: 'Indie Flower', cursive;
+    --ff-logo: 'Courgette', cursive;
     --ff-section-title: 'Chewy', cursive;
 
     --border-radi-btn: .3em;
