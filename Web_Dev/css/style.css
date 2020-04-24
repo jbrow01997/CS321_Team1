@@ -388,11 +388,37 @@ p{
 }
 
 .creator{
-    padding: 12em;
+    display: flex;
+    flex-direction: column;
+    place-items: left;
+    margin: 4em;
+
+  
+    min-width: 400px;
+    max-width: 400px;
+    
     border: 2px solid yellow;
+  
+}
+
+.creator img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 2em;
+   
 }
 
 .creator + .creator{
     margin-left: 10em;
+}
+
+.creator__information{
+    display: flex;
+    flex-direction: column;
+}
+
+.creator__information p{
+    color: white;
+    font-size: 25px;
 }
 
