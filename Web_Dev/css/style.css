@@ -354,5 +354,21 @@ p{
     display: flex;
     flex-direction: column;
     place-items: center;
+    border: 2px solid red;
+    padding: 4em;
+    margin-bottom: .5em;
+    background-image: url('../backgroundImgs/gmu-header.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color:  rgb(126, 126, 126);
+}
+
+.contact-us-header h2{
+    font-family: var(--ff-section-title);
+    font-size: 30px;
+    color: white;
+
 }
 
