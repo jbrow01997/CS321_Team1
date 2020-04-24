@@ -369,6 +369,30 @@ p{
     font-family: var(--ff-section-title);
     font-size: 30px;
     color: white;
+}
 
+.contact-us-wrapper{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    margin: .5em 0em;
+    background-color: rgb(97, 1, 97);
+}
+
+.creators{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10em 0em;
+    border: 2px solid rgb(253, 168, 182);
+}
+
+.creator{
+    padding: 12em;
+    border: 2px solid yellow;
+}
+
+.creator + .creator{
+    margin-left: 10em;
 }
 
