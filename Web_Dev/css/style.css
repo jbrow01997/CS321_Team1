@@ -344,3 +344,15 @@ p{
     color: white;
 }
 
+/* CONTACT US WEB LAYOUT */
+
+.contact-us{
+    height: 200vh;
+}
+
+.contact-us-header{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
