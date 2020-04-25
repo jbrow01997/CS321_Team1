@@ -413,6 +413,15 @@ p{
     letter-spacing: 2px;
 }
 
+.about-bottom-wrapper a{
+    text-decoration: none;
+    color: white
+}
+
+.about-bottom-wrapper a:hover{
+    color: rgb(89, 105, 248);
+}
+
 
 .__info-1{
     background-color: rgb(75, 3, 75);
