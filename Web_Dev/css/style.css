@@ -23,6 +23,7 @@
     --clr-text: #3f3e3e;
     --clr-btn: #559708;
     --clr-btn-dark: #3f7206;
+    --clr-about-sub-text: rgb(3, 209, 72);
 
     --ff-logo: 'Courgette', cursive;
     --ff-section-title: 'Chewy', cursive;
@@ -348,13 +349,32 @@ p{
 .about-header p{
     font-family: var(--ff-section-title);
     font-size: 25px;
-    color:rgb(3, 209, 72);
+    color: var(--clr-about-sub-text);
 }
 
 .about-middle-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: rgb(75, 3, 75);
+    margin-bottom: .5em;
+    padding: 2em;
+}
+
+.about-middle-wrapper h2, h3{
+    font-family: var(--ff-section-title);
+    color: white
+}
+
+.about-middle-wrapper h3{
+    margin-bottom: 1em;
+}
+
+.about-middle-wrapper p{
+    font-family: var(--ff-section-title);
+    color: var(--clr-about-sub-text);
+    text-align: center;
+
 }
 
 .about-bottom-wrapper{
