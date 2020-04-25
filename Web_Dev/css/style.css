@@ -363,6 +363,11 @@ p{
     justify-content: center;
 }
 
+.about-middle-wrapper h2, h3, 
+.about-bottom-wrapper h2{
+    text-align: center;
+}
+
 .about__info{
     margin: 0 5em;
 
