@@ -419,7 +419,7 @@ p{
 }
 
 .about-bottom-wrapper a:hover{
-    color: rgb(89, 105, 248);
+    color: rgb(93, 196, 255);
 }
 
 
@@ -429,8 +429,13 @@ p{
 }
 
 .__info-2{
-    background-color: rgb(75, 3, 75);
     padding: 3em;
+    background: url('../backgroundImgs/orange-shade.jpeg');
+    background-blend-mode: multiply;
+    background-color: rgb(129, 127, 127);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .__info-2 h2{
