@@ -359,6 +359,7 @@ p{
     background-image: url('../backgroundImgs/gmu-header.jpg');
     background-position: top;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color:  rgb(126, 126, 126);
@@ -391,13 +392,18 @@ p{
     margin: 2em;
     border-radius: var(--border-radi-div);
     box-shadow: 0 0 1em rgb(1, 94, 1);
-
+    transition: .3s ease;
   
     min-width: 400px;
     max-width: 400px;
-    
+}
 
-  
+.creator:hover{
+    box-shadow: 0 0 1.4em rgb(1, 65, 1);
+    transition: .3s ease;
+    background-color: rgb(231, 231, 231);
+    min-width: 410px;
+    max-width: 410px;
 }
 
 .creator img{
@@ -423,6 +429,6 @@ p{
     color: black;
     font-size: 25px;
     font-family: 'Barlow Semi Condensed', sans-serif;
- 
 }
+
 
