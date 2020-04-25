@@ -347,7 +347,9 @@ p{
 /* CONTACT US WEB LAYOUT */
 
 .contact-us{
-    height: 200vh;
+    
+    
+   
 }
 
 .contact-us-header{
@@ -391,15 +393,15 @@ p{
     place-items: left;
     margin: 2em;
     border-radius: var(--border-radi-div);
-    box-shadow: 0 0 1em rgb(1, 94, 1);
+    box-shadow: var(--box-shadow);
     transition: .3s ease;
-  
+    background-color: white;
     min-width: 400px;
     max-width: 400px;
 }
 
 .creator:hover{
-    box-shadow: 0 0 1.4em rgb(1, 65, 1);
+    box-shadow: 0 0 1.4em rgb(184, 6, 6);
     transition: .3s ease;
     background-color: rgb(231, 231, 231);
     min-width: 410px;
