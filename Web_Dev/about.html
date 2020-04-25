@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About</title>
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            .tabcontent{
+                display:block;
+            }
+        </style>
     </head>
 
     <body>
@@ -21,6 +26,289 @@
                 </ul>
             </nav>
         </header>
+        <div id="find" class="tabcontent">
+			<section class="main-header">
+				<div class="checker-stable">
+					<form action="/name.php">
+						<label for="name">Enter Pet Name:</label>
+						<input type="text" id="name" name="name"><br><br>
+					</form>
+					
+					<h2 class="shelter-info">Shelter Information:</h2><br>
+					<form action="/shelter.php">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name"><br><br>
+						<label for="address">Address:</label>
+						<input type="text" id="address" name="address"><br><br>
+						<label for="city">City:</label>
+						<input type="text" id="city" name="city"><br><br>
+						<label for="zip">Zipcode:</label>
+						<input type="text" id="zip" name="zip"><br><br>
+					</form>
+					
+					<h2 class="main-gender">Please select gender:</h2><br>
+					<form action="/gender.php">
+						<input type="checkbox" id="gender1" name="gender1" value="Male">
+						<label for="gender1">Male</label>
+						<input type="checkbox" id="gender2" name="gender2" value="Female">
+						<label for="gender2">Female</label><br><br>
+					</form>
+					
+					<h2 class="main-age">Please enter age:</h2><br>
+					<form action="/age.php">
+						<label for="young-age">From:</label>
+						<input type="text" id="young-age" name="young-age">
+						<label for="old-age">  to  </label>
+						<input type="text" id="old-age" name="old-age"><br><br>
+					</form>
+					
+					<h2 class="main-dogbreeds">Dog Breeds:</h2><br>
+					<form action="/dogbreeds.php">
+						<input type="checkbox" id="dog0">
+						<label for="dog0">Select All Dogs</label><br><br>
+						<input type="checkbox" id="dog1" name="dog" value="GermanShepherd">
+						<label for="dog1">German Shepherd</label>
+						<input type="checkbox" id="dog2" name="dog" value="Bulldog">
+						<label for="dog2">Bulldog</label>
+						<input type="checkbox" id="dog3" name="dog" value="Poodle">
+						<label for="dog3">Poodle</label>
+						<input type="checkbox" id="dog4" name="dog" value="LabradorRetriever">
+						<label for="dog4">Labrador Retriever</label>
+						<input type="checkbox" id="dog5" name="dog" value="GoldenRetriever">
+						<label for="dog5">Golden Retriever</label>
+						<input type="checkbox" id="dog6" name="dog" value="Beagle">
+						<label for="dog6">Beagle</label>
+						<input type="checkbox" id="dog7" name="dog" value="YorkshireTerrier">
+						<label for="dog7">Yorkshire Terrier</label>
+						<input type="checkbox" id="dog8" name="dog" value="Dachshund">
+						<label for="dog8">Dachshund</label>
+						<input type="checkbox" id="dog9" name="dog" value="Chihuahua">
+						<label for="dog9">Chihuahua</label>
+						<input type="checkbox" id="dog10" name="dog" value="FrenchBulldog">
+						<label for="dog10">French Bulldog</label>
+						<input type="checkbox" id="dog11" name="dog" value="Pug">
+						<label for="dog11">Pug</label>
+						<input type="checkbox" id="dog12" name="dog" value="SiberianHusky">
+						<label for="dog12">Siberian Husky</label>
+						<input type="checkbox" id="dog13" name="dog" value="Boxer">
+						<label for="dog13">Boxer</label>
+						<input type="checkbox" id="dog14" name="dog" value="AustralianShepherd">
+						<label for="dog14">Australian Shepherd</label>
+						<input type="checkbox" id="dog15" name="dog" value="ShihTzu">
+						<label for="dog15">Shih Tzu</label>
+						<input type="checkbox" id="dog16" name="dog" value="Greyhound">
+						<label for="dog16">Greyhound</label>
+						<input type="checkbox" id="dog17" name="dog" value="Maltese">
+						<label for="dog17">Maltese</label>
+						<input type="checkbox" id="dog18" name="dog" value="Rottweiler">
+						<label for="dog18">Rottweiler</label>
+						<input type="checkbox" id="dog19" name="dog" value="BerneseMountainDog">
+						<label for="dog19">Bernese Mountain Dog</label>
+						<input type="checkbox" id="dog20" name="dog" value="Pomeranian">
+						<label for="dog20">Pomeranian</label>
+						<input type="checkbox" id="dog21" name="dog" value="CavalierKingCharlesSpaniel">
+						<label for="dog21">Cavalier King Charles Spaniel</label>
+						<input type="checkbox" id="dog22" name="dog" value="BichonFrise">
+						<label for="dog22">Bichon Frise</label>
+						<input type="checkbox" id="dog23" name="dog" value="PembrokeWelshCorgi">
+						<label for="dog23">Pembroke Welsh Corgi</label>
+						<input type="checkbox" id="dog24" name="dog" value="BorderCollie">
+						<label for="dog24">Border Collie</label>
+						<input type="checkbox" id="dog25" name="dog" value="GreatDane">
+						<label for="dog25">Great Dane</label>
+						<input type="checkbox" id="dog26" name="dog" value="BostonTerrier">
+						<label for="dog26">Boston Terrier</label>
+						<input type="checkbox" id="dog27" name="dog" value="EnglishSpringerSpaniel">
+						<label for="dog27">English Springer Spaniel</label>
+						<input type="checkbox" id="dog28" name="dog" value="Dobermann">
+						<label for="dog28">Dobermann</label>
+						<input type="checkbox" id="dog29" name="dog" value="BassetHound">
+						<label for="dog29">Basset Hound</label>
+						<input type="checkbox" id="dog30" name="dog" value="St.Bernard">
+						<label for="dog30">St. Bernard</label>
+						<input type="checkbox" id="dog31" name="dog" value="ShibaInu">
+						<label for="dog31">Shiba Inu</label>
+						<input type="checkbox" id="dog32" name="dog" value="ChineseCrestedDog">
+						<label for="dog32">Chinese Crested Dog</label>
+						<input type="checkbox" id="dog33" name="dog" value="HavaneseDog">
+						<label for="dog33">Havanese Dog</label>
+						<input type="checkbox" id="dog34" name="dog" value="ChowChow">
+						<label for="dog34">Chow Chow</label>
+						<input type="checkbox" id="dog35" name="dog" value="IrishSetter">
+						<label for="dog35">Irish Setter</label>
+						<input type="checkbox" id="dog36" name="dog" value="Newfoundland">
+						<label for="dog36">Newfoundland</label>
+						<input type="checkbox" id="dog37" name="dog" value="AlaskanMalamute">
+						<label for="dog37">Alaskan Malamute</label>
+						<input type="checkbox" id="dog38" name="dog" value="Basenji">
+						<label for="dog38">Basenji</label>
+						<input type="checkbox" id="dog39" name="dog" value="Pointer">
+						<label for="dog39">Pointer</label>
+						<input type="checkbox" id="dog40" name="dog" value="BullTerrier">
+						<label for="dog40">Bull Terrier</label>
+						<input type="checkbox" id="dog41" name="dog" value="Irishwolfhound">
+						<label for="dog41">Irish Wolfhound</label>
+						<input type="checkbox" id="dog42" name="dog" value="Dalmatian">
+						<label for="dog42">Dalmatian</label>
+						<input type="checkbox" id="dog43" name="dog" value="MiniatureSchnauzer">
+						<label for="dog43">Miniature Schnauzer</label>
+						<input type="checkbox" id="dog44" name="dog" value="Sheltie">
+						<label for="dog44">Sheltie</label>
+						<input type="checkbox" id="dog45" name="dog" value="AfghanHound">
+						<label for="dog45">Afghan Hound</label>
+						<input type="checkbox" id="dog46" name="dog" value="AustralianCattleDog">
+						<label for="dog46">Australian Cattle Dog</label>
+						<input type="checkbox" id="dog47" name="dog" value="ItalianGreyhound">
+						<label for="dog47">Italian Greyhound</label>
+						<input type="checkbox" id="dog48" name="dog" value="Bloodhound">
+						<label for="dog48">Bloodhound</label>
+						<input type="checkbox" id="dog49" name="dog" value="GermanShorthairedPointer">
+						<label for="dog49">German Shorthaired Pointer</label>
+						<input type="checkbox" id="dog50" name="dog" value="AmericanPitBullTerrier">
+						<label for="dog50">American Pit Bull Terrier</label>
+						<input type="checkbox" id="dog51" name="dog" value="Samoyed">
+						<label for="dog51">Samoyed</label><br><br>
+					</form>
+					<script>
+						document.getElementById('dog0').onclick=function(){
+							var checkboxes = document.getElementsByName('dog');
+							for (var checkbox of checkboxes){
+								checkbox.checked = this.checked;
+							}
+						}
+					</script>
+					
+					<h2 class="main-catbreeds">Cat Breeds:</h2><br>
+					<form action="/catbreeds.php">
+						<input type="checkbox" id="cat0">
+						<label for="cat0">Select All Cats</label><br><br>
+						<input type="checkbox" id="cat1" name="cat" value="PersianCat">
+						<label for="cat1">Persian Cat</label>
+						<input type="checkbox" id="cat2" name="cat" value="BengalCat">
+						<label for="cat2">Bengal Cat</label>
+						<input type="checkbox" id="cat3" name="cat" value="MaineCoon">
+						<label for="cat3">Maine Coon</label>
+						<input type="checkbox" id="cat4" name="cat" value="SiameseCat">
+						<label for="cat4">Siamese Cat</label>
+						<input type="checkbox" id="cat5" name="cat" value="BritishShorthair">
+						<label for="cat5">British Shorthair</label>
+						<input type="checkbox" id="cat6" name="cat" value="SphynxCat">
+						<label for="cat6">Sphynx Cat</label>
+						<input type="checkbox" id="cat7" name="cat" value="Ragdoll">
+						<label for="cat7">Ragdoll</label>
+						<input type="checkbox" id="cat8" name="cat" value="MunchkinCat">
+						<label for="cat8">Munchkin Cat</label>
+						<input type="checkbox" id="cat9" name="cat" value="ScottishFold">
+						<label for="cat9">Scottish Fold</label>
+						<input type="checkbox" id="cat10" name="cat" value="RussianBlue">
+						<label for="cat10">Russian Blue</label>
+						<input type="checkbox" id="cat11" name="cat" value="SavannahCat">
+						<label for="cat11">Savannah Cat</label>
+						<input type="checkbox" id="cat12" name="cat" value="NorwegianForestCat">
+						<label for="cat12">Norwegian Forest Cat</label>
+						<input type="checkbox" id="cat13" name="cat" value="SiberianCat">
+						<label for="cat13">Siberian Cat</label>
+						<input type="checkbox" id="cat14" name="cat" value="TurkishAngora">
+						<label for="cat14">Turkish Angora</label>
+						<input type="checkbox" id="cat15" name="cat" value="Birman">
+						<label for="cat15">Birman</label>
+						<input type="checkbox" id="cat16" name="cat" value="HimalayanCat">
+						<label for="cat16">Himalayan Cat</label>
+						<input type="checkbox" id="cat17" name="cat" value="EuropeanShorthair">
+						<label for="cat17">European Shorthair</label>
+						<input type="checkbox" id="cat18" name="cat" value="ExoticShorthair">
+						<label for="cat18">Exotic Shorthair</label>
+						<input type="checkbox" id="cat19" name="cat" value="Chartreux">
+						<label for="cat19">Chartreux</label>
+						<input type="checkbox" id="cat20" name="cat" value="SingapuraCat">
+						<label for="cat20">Singapura Cat</label>
+						<input type="checkbox" id="cat21" name="cat" value="AmericanShorthair">
+						<label for="cat21">American Shorthair</label>
+						<input type="checkbox" id="cat22" name="cat" value="BombayCat">
+						<label for="cat22">Bombay Cat</label>
+						<input type="checkbox" id="cat23" name="cat" value="Toyger">
+						<label for="cat23">Toyger</label>
+						<input type="checkbox" id="cat24" name="cat" value="AbyssinianCat">
+						<label for="cat24">Abyssinian Cat</label>
+						<input type="checkbox" id="cat25" name="cat" value="RagamuffinCat">
+						<label for="cat25">Ragamuffin Cat</label>
+						<input type="checkbox" id="cat26" name="cat" value="Peterbald">
+						<label for="cat26">Peterbald</label>
+						<input type="checkbox" id="cat27" name="cat" value="AmericanWirehair">
+						<label for="cat27">American Wirehair</label>
+						<input type="checkbox" id="cat28" name="cat" value="DevonRex">
+						<label for="cat28">Devon Rex</label>
+						<input type="checkbox" id="cat29" name="cat" value="BalineseCat">
+						<label for="cat29">Balinese Cat</label>
+						<input type="checkbox" id="cat30" name="cat" value="BurmeseCat">
+						<label for="cat30">Burmese Cat</label>
+						<input type="checkbox" id="cat31" name="cat" value="ManxCat">
+						<label for="cat31">Manx Cat</label>
+						<input type="checkbox" id="cat32" name="cat" value="Selkirk Rex">
+						<label for="cat32">Selkirk Rex</label>
+						<input type="checkbox" id="cat33" name="cat" value="SomaliCat">
+						<label for="cat33">Somali Cat</label>
+						<input type="checkbox" id="cat34" name="cat" value="VanCat">
+						<label for="cat34">Van Cat</label>
+						<input type="checkbox" id="cat35" name="cat" value="Lykoi">
+						<label for="cat35">Lykoi</label>
+						<input type="checkbox" id="cat36" name="cat" value="American Curl">
+						<label for="cat36">American Curl</label>
+						<input type="checkbox" id="cat37" name="cat" value="Nebelung">
+						<label for="cat37">Nebelung</label>
+						<input type="checkbox" id="cat38" name="cat" value="Ocicat">
+						<label for="cat38">Ocicat</label>
+						<input type="checkbox" id="cat39" name="cat" value="Korat">
+						<label for="cat39">Korat</label>
+						<input type="checkbox" id="cat40" name="cat" value="Pixie-bob">
+						<label for="cat40">Pixie-bob</label>
+						<input type="checkbox" id="cat41" name="cat" value="TonkineseCat">
+						<label for="cat41">Tonkinese Cat</label>
+						<input type="checkbox" id="cat42" name="cat" value="HavanaBrown">
+						<label for="cat42">Havana Brown</label>
+						<input type="checkbox" id="cat43" name="cat" value="Minskin">
+						<label for="cat43">Minskin</label>
+						<input type="checkbox" id="cat44" name="cat" value="SnowshoeCat">
+						<label for="cat44">Snowshoe Cat</label>
+						<input type="checkbox" id="cat45" name="cat" value="JapaneseBobtail">
+						<label for="cat45">Japanese Bobtail</label>
+						<input type="checkbox" id="cat46" name="cat" value="OrientalShorthair">
+						<label for="cat46">Oriental Shorthair</label>
+						<input type="checkbox" id="cat47" name="cat" value="LaPerm">
+						<label for="cat47">LaPerm</label>
+						<input type="checkbox" id="cat48" name="cat" value="BritishLonghair">
+						<label for="cat48">British Longhair</label>
+						<input type="checkbox" id="cat49" name="cat" value="EgyptianMau">
+						<label for="cat49">Egyptian Mau</label>
+						<input type="checkbox" id="cat50" name="cat" value="CornishRex">
+						<label for="cat50">Cornish Rex</label>
+						<input type="checkbox" id="cat51" name="cat" value="TurkishVan">
+						<label for="cat51">Turkish Van</label><br><br>
+					</form>
+					<script>
+						document.getElementById('cat0').onclick=function(){
+							var checkboxes = document.getElementsByName('cat');
+							for (var checkbox of checkboxes){
+								checkbox.checked = this.checked;
+							}
+						}
+					</script>
+					<input type="submit" value="Submit"><br><br>
+					
+				</div>
+			</section>
+        </div>
+		<script>
+		function openTab(evt,find){
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			if (tabcontent[0].style.display === "none"){
+				tabcontent[0].style.display = "block";
+			}else{
+				tabcontent[0].style.display = "none";
+			}
+		}
+		</script>
 
         <div class="about-header">
             <h2>What Is Agile Adoption?</h2>
