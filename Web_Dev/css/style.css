@@ -356,8 +356,12 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(75, 3, 75);
-    margin-bottom: .5em;
+    background: url('../backgroundImgs/dark-gray-shade.jpg');
+    background-blend-mode: multiply;
+    background-color: rgb(109, 107, 107);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 2em;
 }
 
@@ -389,12 +393,6 @@ p{
     text-align: center;
 }
 
-.about__info{
-    
-    border: 2px solid red;
-
-
-}
 
 .about-bottom-wrapper{
     background-color: brown;
@@ -424,7 +422,7 @@ p{
 
 
 .__info-1{
-    background: url('../backgroundImgs/blue-shade.jpg');
+    background: url('../backgroundImgs/light-blue-shade.jpg');
     background-blend-mode: multiply;
     background-color: rgb(109, 107, 107);
     background-position: center;
@@ -445,6 +443,24 @@ p{
 
 .__info-2 h2{
     margin-bottom: 1.6em;
+}
+
+ /* fixing border stuff here to look nice */
+.__info-1,
+.__info-2,
+.about-middle-wrapper,
+.about-header{
+    border: 5px solid rgb(173, 173, 173);
+}
+
+.about-middle-wrapper,
+.__info-1,
+.__info-2{
+    border-top: none;
+}
+
+.__info-1{
+    border-right: none;
 }
 
 
