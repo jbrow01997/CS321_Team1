@@ -393,7 +393,7 @@ p{
     place-items: left;
     margin: 4em;
     border-radius: var(--border-radi-div);
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 0 1em rgb(1, 94, 1);
 
   
     min-width: 400px;
@@ -418,6 +418,8 @@ p{
 .creator__information{
     display: flex;
     flex-direction: column;
+    margin-left: .5em;
+    margin-bottom: .2em;
 }
 
 .creator__information p{
