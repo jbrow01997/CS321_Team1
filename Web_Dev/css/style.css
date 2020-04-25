@@ -382,15 +382,13 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
-    
 }
 
 .creator{
     display: flex;
     flex-direction: column;
     place-items: left;
-    margin: 4em;
+    margin: 2em;
     border-radius: var(--border-radi-div);
     box-shadow: 0 0 1em rgb(1, 94, 1);
 
