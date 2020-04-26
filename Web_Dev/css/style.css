@@ -69,6 +69,9 @@ footer{
     justify-content: center;
     height: 10em;
     background-color: var(--clr-btn-dark);
+    position: absolute;
+    width: 100%;
+
 }
 
 footer .navList{
@@ -567,5 +570,12 @@ p{
     font-size: 25px;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
+
+
+/* WISH LIST WEB LAYOUT */
+.wish-list main{
+    margin-bottom: 150px; /* delete later!!! */
+}
+
 
 
