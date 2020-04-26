@@ -46,7 +46,7 @@ header{
     background-image: url(../backgroundImgs//cartoon_pets.jpg);
     background-position: top;
     background-blend-mode: multiply;
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(167, 167, 167);
     max-height: 150px;
 }
 
@@ -99,8 +99,6 @@ footer .navList{
     font-family: var(--ff-section-title);
     margin-left: 4rem;
 }
-
-
 
 .navList li{
     margin: 1rem 4rem;
