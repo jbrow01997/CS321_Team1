@@ -242,7 +242,8 @@ p{
 
 
 .main-header,
-.pet-display-header{
+.pet-display-header,
+.find-pet-header{
     display: flex;
     flex-direction: column;
     place-items: center;
