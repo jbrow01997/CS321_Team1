@@ -23,17 +23,27 @@ Cat.classList.add('pet');
     const button_wishList = document.createElement('a');
     const button_viewProfile = document.createElement('a');
 
+    /* create element information for view more card */
+    const viewMore__card = document.createElement('a');
+   
 
 
+/* create elements here */
 /* params will be, (name, gender, location, img src, ...) */
 createCat();
+createViewMoreCard();
+
+
+
+
+
 
 /* if cat exists, then append, will fix */
 Cat.style.marginLeft = "1.2em"; //fixes margin error when appending to first parent
 Cat.append(pet__title, pet__img, pet__information_div, button_div);
-
 Cats.appendChild(Cat.cloneNode(Cat));
 Cats.appendChild(Cat.cloneNode(Cat));
+Cats.appendChild(viewMore__card);
 
 
 
@@ -43,6 +53,10 @@ Cats.appendChild(Cat.cloneNode(Cat));
 
 
 
+
+
+
+/* create Cat functions */
 
 function createCat(){
     createPetTitle();
@@ -84,5 +98,12 @@ function createPetButtons(){ //need to add button action listenerss
     button_viewProfile.classList.add('btn-color');
     button_viewProfile.textContent = "View Pet Profile";
     button_div.append(button_wishList, button_viewProfile);
+}
+
+/* create view more card function */
+function createViewMoreCard(){
+    viewMore__card.setAttribute("href", "#");
+    viewMore__card.textContent = "View More!";
+    viewMore__card.classList.add('viewmore');
 }
 
