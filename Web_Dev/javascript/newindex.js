@@ -1,49 +1,47 @@
 /* HANDLING CATS FIRST */
 
 const Cats = document.getElementById('cats');
-//const Cat = document.getElementById('cat');
-let counter = 0;
+let catCounter = 0;
 
 
 Cats.classList.add('pets');
 
-    /* create element information for cat pet cards */
-    //let pet__title_cat = document.createElement('h2');
-    //let pet__img_cat = document.createElement('img');
-    //let pet__information_div_cat = document.createElement('div');
-    //let pet__gender_cat = document.createElement('p');
-    //let pet__location_cat = document.createElement('p');
-    //let button_div_cat = document.createElement('div');
-    //let button_wishList_cat = document.createElement('a');
-    //let button_viewProfile_cat = document.createElement('a');
+   
 
     /* create element information for view more card */
-    const viewMore__card_cat = document.createElement('a');
+    //const viewMore__card_cat = document.createElement('a');
    
 
 
 /* create elements here */
 /* params will be, (name, gender, location, img src, ...) */
 
-/*
-const new_cat = document.createElement('div');
-const new_cat2 = document.createElement('div');
-const new_cat3 = document.createElement('div');
-new_cat.classList.add('pet');
-new_cat3.classList.add('pet');
-*/
 
 
 
 
-const name = createNewCatElement('Oscar');
-const name2 = createNewCatElement('Mike');
-const name3 = createNewCatElement('Wilson');
 
-createCat(name, 'Oscar', 'Male', 'Manassas', '../Web_Dev/pet_images/oscar.jpg');
-createCat(name2, 'Mike', 'Male', 'Manassas', '../Web_Dev/pet_images/oscar.jpg');
-//Cats.append(document.getElementById('cat'+counter));
 
+createCat(createNewCatElement('Oscar'), 'Oscar', 'Make', 'Woodbridge', '../Web_Dev/pet_images/oscar.jpg');
+
+
+if(catCounter === 0){
+    console.log('browse cats on home page is null');
+    Cats.append(displayNoCatsMessage());
+}
+else{
+    Cats.append(createViewMoreCard_cat());
+}
+
+
+
+function displayNoCatsMessage(){
+    const text = document.createElement('h2');
+    text.textContent = 'Sorry, no cats to display right now.';
+    text.style.color = 'red';
+    text.style.alignItems = 'center';
+    return text;
+}
 
 function createNewCatElement(name){
     name = document.createElement('div');
@@ -51,31 +49,11 @@ function createNewCatElement(name){
     return name;
 }
 
-
-
-
-
-
-
-
-
-
-
-createViewMoreCard_cat();
-
-
-/* if cat exists, then append, will fix */
-
-//Cats.appendChild(Cat.cloneNode(Cat));
-//Cats.appendChild(Cat.cloneNode(Cat));
-
-Cats.appendChild(viewMore__card_cat);
-
 /* create Cat functions */
 
 function createCat(varname, name, gender, location, img){
     
-    varname.setAttribute('id', 'cat'+counter++);
+    varname.setAttribute('id', 'cat'+(++catCounter));
 
    
     varname.style.marginLeft = "1.2em"; //fixes margin error when appending to first parent
@@ -153,9 +131,11 @@ function createPetButtons_cat(){ //need to add button action listenerss
 
 /* create view more card function */
 function createViewMoreCard_cat(){
+    const viewMore__card_cat = document.createElement('a');
     viewMore__card_cat.setAttribute("href", "#");
     viewMore__card_cat.textContent = "View More!";
     viewMore__card_cat.classList.add('viewmore');
+    return viewMore__card_cat;
 }
 
 
