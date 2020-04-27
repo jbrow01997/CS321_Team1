@@ -131,17 +131,25 @@ function createPetButtons_cat(){ //need to add button action listenerss
     button_viewProfile_cat.classList.add('btn');
     button_viewProfile_cat.classList.add('btn-color');
     button_viewProfile_cat.textContent = "View Pet Profile";
-    button_viewProfile_cat.setAttribute("href", "#"); //change for view profile function
-    addEventListeners(button_wishList_cat);
+    //button_viewProfile_cat.setAttribute("href", "#"); //change for view profile function
+    
+    //adding eventlisteners for pet card buttons
+    button_wishList_cat.addEventListener('click', function(){
+        console.log('you click on wish list for cat');
+    });
+
+    button_viewProfile_cat.addEventListener('click', function(){
+        console.log('you click on view pet profile for cat');
+    });
+
+
+
+
     button_div_cat.append(button_wishList_cat, button_viewProfile_cat);
     return button_div_cat;
 }
 
-function addEventListeners(btn){
-    btn.addEventListener('click', function(){
-        console.log('you click wish list for cat');
-    });
-}
+
 
 /* create view more card function */
 function createViewMoreCard_cat(){
