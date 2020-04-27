@@ -18,8 +18,8 @@ Cats.classList.add('pets');
 
 
 //for testing purposes
-createCat(createNewCatElement('Oscar'), 'Oscar', 'Make', 'Woodbridge', '../Web_Dev/pet_images/oscar.jpg');
-
+createCat(createNewCatElement('Oscar'), 'Oscar', 'Male', 'Woodbridge', '../Web_Dev/pet_images/oscar.jpg');
+createCat(createNewCatElement('Oscar'), 'Oscar', 'Male', 'Woodbridge', '../Web_Dev/pet_images/oscar.jpg');
 
 if(catCounter === 0){
     console.log('browse cats on home page is null');

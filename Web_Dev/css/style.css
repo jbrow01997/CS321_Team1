@@ -152,6 +152,7 @@ footer .navList{
 
 .btn:hover{
     background-color: var(--clr-btn-dark);
+    cursor: pointer;
 }
 
 .btn + .btn{
