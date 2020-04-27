@@ -1,115 +1,149 @@
 /* HANDLING CATS FIRST */
 
 const Cats = document.getElementById('cats');
-const Cat = document.getElementById('cat');
-const allCats = document.getElementsByClassName('cats');
-let counter = 0;
+let catCounter = 0;
 
 
-Cat.classList.add('pet');
+Cats.classList.add('pets');
 
-    /* create element information for cat pet cards */
-    const pet__title_cat = document.createElement('h2');
-    const pet__img_cat = document.createElement('img');
-    const pet__information_div_cat = document.createElement('div');
-    const pet__gender_cat = document.createElement('p');
-    const pet__location_cat = document.createElement('p');
-    const button_div_cat = document.createElement('div');
-    const button_wishList_cat = document.createElement('a');
-    const button_viewProfile_cat = document.createElement('a');
+   
 
     /* create element information for view more card */
-    const viewMore__card_cat = document.createElement('a');
+    //const viewMore__card_cat = document.createElement('a');
    
 
 
 /* create elements here */
 /* params will be, (name, gender, location, img src, ...) */
-allCats[0] = createCat(counter, 'Oscar', 'Male', 'Woodbridge', '../Web_Dev/pet_images/oscar.jpg', allCats[counter]);
-allCats[1] = createCat(counter, 'Oscar', 'Male', 'Manassas', '../Web_Dev/pet_images/oscar.jpg', allCats[1]);
 
 
 
-createViewMoreCard_cat();
 
 
-/* if cat exists, then append, will fix */
 
-//Cats.appendChild(Cat.cloneNode(Cat));
-//Cats.appendChild(Cat.cloneNode(Cat));
 
-Cats.appendChild(viewMore__card_cat);
+createCat(createNewCatElement('Oscar'), 'Oscar', 'Make', 'Woodbridge', '../Web_Dev/pet_images/oscar.jpg');
+
+
+if(catCounter === 0){
+    console.log('browse cats on home page is null');
+    Cats.append(displayNoCatsMessage());
+}
+else{
+    Cats.append(createViewMoreCard_cat());
+}
+
+
+
+function displayNoCatsMessage(){
+    const text = document.createElement('h2');
+    text.textContent = 'Sorry, no cats to display right now.';
+    text.style.color = 'red';
+    text.style.alignItems = 'center';
+    return text;
+}
+
+function createNewCatElement(name){
+    name = document.createElement('div');
+    name.classList.add('pet');
+    return name;
+}
 
 /* create Cat functions */
 
-function createCat(counter, name, gender, location, img, allCats){
+function createCat(varname, name, gender, location, img){
     
-
-    createPetTitle_cat(name);
-
-    createPetInformation_cat(gender, location);
-
-    createPetImage_cat(img);
-
-    createPetButtons_cat();
-
-    addEventListeners();
-
-    Cat.style.marginLeft = "1.2em"; //fixes margin error when appending to first parent
-
-    Cat.append(pet__title_cat, pet__img_cat, pet__information_div_cat, button_div_cat);
+    varname.setAttribute('id', 'cat'+(++catCounter));
 
    
+    varname.style.marginLeft = "1.2em"; //fixes margin error when appending to first parent
+
+    varname.append(createPetTitle_cat(name), createPetImage_cat(img), createPetInformation_cat(gender, location), createPetButtons_cat());
+
+    Cats.append(varname);
 }
 
 
 
 
 function createPetTitle_cat(name){
+    let pet__title_cat = document.createElement('h2');
+
     pet__title_cat.textContent = name; //get pet name from database
     pet__title_cat.classList.add('pet__title');
+    return pet__title_cat;
 }
 
 function createPetInformation_cat(gender, location){
+    let pet__information_div_cat = document.createElement('div');
+    let pet__gender_cat = document.createElement('p');
+    let pet__location_cat = document.createElement('p');
+
     pet__information_div_cat.classList.add('pet__information'); //get gender, location from database
     pet__gender_cat.textContent = gender;
     pet__location_cat.textContent = location;
     pet__information_div_cat.append(pet__gender_cat, pet__location_cat);
-
+    return pet__information_div_cat;
 }
 
 function createPetImage_cat(img){ //need to add img class list maybe????
+    let pet__img_cat = document.createElement('img');
+
     pet__img_cat.setAttribute("src", img); //get img from database
     pet__img_cat.setAttribute("width", "100%");
     pet__img_cat.setAttribute("height", "100%");
     pet__img_cat.setAttribute("alt", "Pet picture");
+    return pet__img_cat;
 }
 
 function createPetButtons_cat(){ //need to add button action listenerss
+    let button_div_cat = document.createElement('div');
+    let button_wishList_cat = document.createElement('a');
+    let button_viewProfile_cat = document.createElement('a');
+
     button_div_cat.classList.add('btn__wrapper');
     button_wishList_cat.classList.add('btn');
     button_wishList_cat.classList.add('btn-color');
     button_wishList_cat.textContent = 'Add to Wish List';
-    button_wishList_cat.setAttribute("href", "#"); //change for wish list function
+    //button_wishList_cat.setAttribute("href", ""); //change for wish list function
     button_viewProfile_cat.classList.add('btn');
     button_viewProfile_cat.classList.add('btn-color');
     button_viewProfile_cat.textContent = "View Pet Profile";
-    button_viewProfile_cat.setAttribute("href", "#"); //change for view profile function
+    //button_viewProfile_cat.setAttribute("href", "#"); //change for view profile function
+    
+    //adding eventlisteners for pet card buttons
+    button_wishList_cat.addEventListener('click', function(){
+        console.log('you click on wish list for cat');
+    });
+
+    button_viewProfile_cat.addEventListener('click', function(){
+        console.log('you click on view pet profile for cat');
+    });
+
+
+
+
     button_div_cat.append(button_wishList_cat, button_viewProfile_cat);
+    return button_div_cat;
 }
 
-function addEventListeners(btn){
-    button_wishList_cat.addEventListener('click', function(){
-        console.log('you click wish list for cat');
-    });
-}
+
 
 /* create view more card function */
 function createViewMoreCard_cat(){
+    const viewMore__card_cat = document.createElement('a');
     viewMore__card_cat.setAttribute("href", "#");
     viewMore__card_cat.textContent = "View More!";
     viewMore__card_cat.classList.add('viewmore');
+    return viewMore__card_cat;
 }
+
+
+
+
+
+
+
 
 
 
