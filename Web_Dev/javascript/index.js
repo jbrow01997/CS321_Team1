@@ -2,15 +2,6 @@ const Cats = document.getElementById('cats');
 const Cat = document.getElementById('cat');
 
 
-
-function appendCloneChild(parent, child){
-    
-}
-
-function appendViewMoreCard(Cat){
-
-}
-
 Cat.classList.add('pet');
 
     /* create element information for pet cards */
