@@ -272,10 +272,9 @@ p{
 .pets{
     display: flex;
     flex-direction: row;
-    margin: 0 1em;
-    padding: 1em;
+    margin-right: 1em;
+    padding: 1em 1em 1em 0;
     overflow: auto;
-    
 }
 
 .pet,
@@ -324,9 +323,6 @@ p{
 
 }
 
-.pet + .pet{
-    margin-left: 1em;
-}
 .pet + .viewmore{
     margin-left: 16px;
 }
