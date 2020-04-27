@@ -17,11 +17,7 @@ Cats.classList.add('pets');
 /* params will be, (name, gender, location, img src, ...) */
 
 
-
-
-
-
-
+//for testing purposes
 createCat(createNewCatElement('Oscar'), 'Oscar', 'Make', 'Woodbridge', '../Web_Dev/pet_images/oscar.jpg');
 
 
@@ -149,87 +145,137 @@ function createViewMoreCard_cat(){
 
 /* HANDLING DOGS SECOND */
 
+
 const Dogs = document.getElementById('dogs');
-const Dog = document.getElementById('dog');
+let dogCounter = 0;
 
-Dog.classList.add('pet');
 
-/* create element information for dog pet cards */
-const pet__title_dog = document.createElement('h2');
-const pet__img_dog = document.createElement('img');
-const pet__information_div_dog = document.createElement('div');
-const pet__gender_dog = document.createElement('p');
-const pet__location_dog = document.createElement('p');
-const button_div_dog = document.createElement('div');
-const button_wishList_dog = document.createElement('a');
-const button_viewProfile_dog = document.createElement('a');
+Dogs.classList.add('pets');
 
- /* create element information for view more card */
- const viewMore__card_dog = document.createElement('a');
+   
+
+    /* create element information for view more card */
+    //const viewMore__card_cat = document.createElement('a');
+   
+
 
 /* create elements here */
 /* params will be, (name, gender, location, img src, ...) */
-createDog();
-createViewMoreCard_dog();
 
-/* if dog exists, then append, will fix */
-Dog.style.marginLeft = "1.2em"; //fixes margin error when appending to first parent
-Dog.append(pet__title_dog, pet__img_dog, pet__information_div_dog, button_div_dog);
-Dogs.appendChild(Dog.cloneNode(Dog));
-Dogs.appendChild(Dog.cloneNode(Dog));
-Dogs.appendChild(viewMore__card_dog);
 
+//for testing purposes
+createDog(createNewDogElement('Griffin'), 'Griffin', 'Male', 'Springfield', '../Web_Dev/pet_images/husky.jpg');
+
+
+if(dogCounter === 0){
+    console.log('browse dogs on home page is null');
+    Dogs.append(displayNoDogsMessage());
+}
+else{
+    Dogs.append(createViewMoreCard_dog());
+}
+
+
+
+function displayNoDogsMessage(){
+    const text = document.createElement('h2');
+    text.textContent = 'Sorry, no dogs to display right now.';
+    text.style.color = 'red';
+    text.style.alignItems = 'center';
+    return text;
+}
+
+function createNewDogElement(name){
+    name = document.createElement('div');
+    name.classList.add('pet');
+    return name;
+}
 
 /* create Dog functions */
 
-function createDog(){
-    createPetTitle_dog();
+function createDog(varname, name, gender, location, img){
+    
+    varname.setAttribute('id', 'dog'+(++dogCounter));
 
-    createPetInformation_dog();
+   
+    varname.style.marginLeft = "1.2em"; //fixes margin error when appending to first parent
 
-    createPetImage_dog();
+    varname.append(createPetTitle_dog(name), createPetImage_dog(img), createPetInformation_dog(gender, location), createPetButtons_dog());
 
-    createPetButtons_dog();
+    Dogs.append(varname);
 }
 
 
-function createPetTitle_dog(){
-    pet__title_dog.textContent = 'Oscar'; //get pet name from database
+
+
+function createPetTitle_dog(name){
+    let pet__title_dog = document.createElement('h2');
+
+    pet__title_dog.textContent = name; //get pet name from database
     pet__title_dog.classList.add('pet__title');
+    return pet__title_dog;
 }
 
-function createPetInformation_dog(){
+function createPetInformation_dog(gender, location){
+    let pet__information_div_dog = document.createElement('div');
+    let pet__gender_dog = document.createElement('p');
+    let pet__location_dog = document.createElement('p');
+
     pet__information_div_dog.classList.add('pet__information'); //get gender, location from database
-    pet__gender_dog.textContent = 'Male';
-    pet__location_dog.textContent = 'Woodbridge, Va';
+    pet__gender_dog.textContent = gender;
+    pet__location_dog.textContent = location;
     pet__information_div_dog.append(pet__gender_dog, pet__location_dog);
-
+    return pet__information_div_dog;
 }
 
-function createPetImage_dog(){ //need to add img class list maybe????
-    pet__img_dog.setAttribute("src", "../Web_Dev/pet_images/husky.jpg"); //get img from database
+function createPetImage_dog(img){ //need to add img class list maybe????
+    let pet__img_dog = document.createElement('img');
+
+    pet__img_dog.setAttribute("src", img); //get img from database
     pet__img_dog.setAttribute("width", "100%");
     pet__img_dog.setAttribute("height", "100%");
     pet__img_dog.setAttribute("alt", "Pet picture");
+    return pet__img_dog;
 }
 
 function createPetButtons_dog(){ //need to add button action listenerss
+    let button_div_dog = document.createElement('div');
+    let button_wishList_dog = document.createElement('a');
+    let button_viewProfile_dog = document.createElement('a');
+
     button_div_dog.classList.add('btn__wrapper');
     button_wishList_dog.classList.add('btn');
     button_wishList_dog.classList.add('btn-color');
     button_wishList_dog.textContent = 'Add to Wish List';
-    button_wishList_dog.setAttribute("href", "#"); //change for wish list function
+    //button_wishList_cat.setAttribute("href", ""); //change for wish list function
     button_viewProfile_dog.classList.add('btn');
     button_viewProfile_dog.classList.add('btn-color');
     button_viewProfile_dog.textContent = "View Pet Profile";
-    button_viewProfile_dog.setAttribute("href", "#"); //change for view profile function
+    //button_viewProfile_cat.setAttribute("href", "#"); //change for view profile function
+    
+    //adding eventlisteners for pet card buttons
+    button_wishList_dog.addEventListener('click', function(){
+        console.log('you click on wish list for dog');
+    });
+
+    button_viewProfile_dog.addEventListener('click', function(){
+        console.log('you click on view pet profile for dog');
+    });
+
+
+
+
     button_div_dog.append(button_wishList_dog, button_viewProfile_dog);
+    return button_div_dog;
 }
+
+
 
 /* create view more card function */
 function createViewMoreCard_dog(){
+    const viewMore__card_dog = document.createElement('a');
     viewMore__card_dog.setAttribute("href", "#");
     viewMore__card_dog.textContent = "View More!";
     viewMore__card_dog.classList.add('viewmore');
+    return viewMore__card_dog;
 }
-
