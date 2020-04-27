@@ -72,9 +72,12 @@ function createPetButtons_cat(){ //need to add button action listenerss
     button_wishList_cat.classList.add('btn');
     button_wishList_cat.classList.add('btn-color');
     button_wishList_cat.textContent = 'Add to Wish List';
+    button_wishList_cat.setAttribute("href", "#"); //change for wish list function
     button_viewProfile_cat.classList.add('btn');
     button_viewProfile_cat.classList.add('btn-color');
     button_viewProfile_cat.textContent = "View Pet Profile";
+    button_viewProfile_cat.setAttribute("href", "#"); //change for view profile function
+
     button_div_cat.append(button_wishList_cat, button_viewProfile_cat);
 }
 
@@ -158,9 +161,11 @@ function createPetButtons_dog(){ //need to add button action listenerss
     button_wishList_dog.classList.add('btn');
     button_wishList_dog.classList.add('btn-color');
     button_wishList_dog.textContent = 'Add to Wish List';
+    button_wishList_dog.setAttribute("href", "#"); //change for wish list function
     button_viewProfile_dog.classList.add('btn');
     button_viewProfile_dog.classList.add('btn-color');
     button_viewProfile_dog.textContent = "View Pet Profile";
+    button_viewProfile_dog.setAttribute("href", "#"); //change for view profile function
     button_div_dog.append(button_wishList_dog, button_viewProfile_dog);
 }
 
