@@ -201,6 +201,7 @@ p{
     color: white;
     min-width: 450px;
     min-height: 350px;
+    max-height: 350px;
     font-size: 50px;
     padding: 10px;
     box-shadow: var(--box-shadow);
@@ -274,6 +275,7 @@ p{
     margin: 0 1em;
     padding: 1em;
     overflow: auto;
+    
 }
 
 .pet,
