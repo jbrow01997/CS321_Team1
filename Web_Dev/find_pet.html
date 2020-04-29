@@ -40,6 +40,10 @@
 					<option value="Male">Male</option>
 					<option value="Female">Female</option>
 				</select><br><br>
+				
+				<label for="age">Enter Pet Age:</label>
+				<input type="text" id="age"><br><br>
+							   
 				<h2 class="dogbreed-gender">Please select dog breed:</h2><br>
 				<select id="dog">
 					<option value="None">None</option>
@@ -67,6 +71,7 @@
 			function sendData(){
 				var name = document.getElementById("name").value;
 				var gender = document.getElementById("gender").value;
+				var age = document.getElementbyId("age").value;
 				var dog = document.getElementById("dog").value;
 			}
 		</script>
