@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="find-pet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find Pet</title>
+        <link rel="stylesheet" href="css/style.css">
+		<style>
+			.find-wrapper {
+				margin: 10px;
+			}
+		</style>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo"><a href="/Web_Dev/index.html">Agile Adoption</a></h1>
+            <nav">
+                <ul class="navList">
+                    <li><a href="/Web_Dev/index.php">Home</a></li>
+                    <li><a href="/Web_Dev/about.html">About</a></li>
+                    <li><a href="/Web_Dev/contact_us.html">Contact Us</a></li>
+                    <li><a href="/Web_Dev/wish_list.php">My Wish List</a></li>
+                    <li><a href="/Web_Dev/find_pet.html">Find Pet</a></li>                 
+                </ul>
+            </nav>
+        </header>
+		
+		<main>
+			<h2 class="find-pet-header section__title">Find your pet</h2><br>
+			<!--Search section-->
+			<form action="index.php" class="find-wrapper" method="post">
+				<label>Enter Pet Name:</label>
+				<input type="text" name="name"><br><br>
+		
+				<label>Please Select Gender:</label>
+				<select name="gender">
+					<option value="Both">Both</option>
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select><br><br>
+				
+				<label>Select Dog Breed:</label>
+				<select name="dog">
+					<option value="">None</option>
+					<option value="American Cattle Dog">American Cattle Dog</option>
+					<option value="American Pit Bull Terrier">American Pit Bull Terrier</option>
+					<option value="American Shepherd">American Shepherd</option>
+					<option value="American Staffordshire Terrier">American Staffordshire Terrier</option>
+					<option value="Border Collie">Border Collie</option>
+					<option value="Boxer">Boxer</option>
+					<option value="Dachshund">Dachshund</option>
+					<option value="German Shepherd">German Shepherd</option>
+					<option value="Rottweiler">Rottweiler</option>
+					<option value="Shih Tzu">Shih Tzu</option>
+				</select><br><br>
+				<input type="submit" name="submit" value="Submit"><br><br>
+			</form>
+        </main>
+
+        <footer>
+            <nav">
+                <ul class="navList">
+                    <li><a href="/Web_Dev/index.php">Home</a></li>
+                    <li><a href="/Web_Dev/about.html">About</a></li>
+                    <li><a href="/Web_Dev/contact_us.html">Contact Us</a></li>
+                    <li><a href="/Web_Dev/wish_list.php">My Wish List</a></li>
+                    <li><a href="/Web_Dev/find_pet.html">Find Pet</a></li>                 
+                </ul>
+			</nav>
+			<h1 class="footer-logo"><a href="/Web_Dev/index.php">Agile <br>Adoption</a></h1>
+        </footer>
+    </body>
+</html>
